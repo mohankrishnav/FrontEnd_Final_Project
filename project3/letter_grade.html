@@ -1,0 +1,46 @@
+<!-- Name: Mohan Krishna Veeranki
+S Number: S00450299 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number to Letter Grade Converter</title>
+    <script>
+        function convertNumberToLetterGrade() {
+            while (true) {
+                let numberGrade = prompt("Enter number grade from 0 through 100\nOr enter 999 to end entries:");
+                numberGrade = Number(numberGrade);
+                if (numberGrade === 999) {
+                    break;
+                }
+                if (numberGrade < 0 || numberGrade > 100 || isNaN(numberGrade)) {
+                    alert("Please enter a valid number grade between 0 and 100.");
+                    continue;
+                }
+                let letterGrade;
+                if (numberGrade >= 88) {
+                    letterGrade = 'A';
+                } else if (numberGrade >= 80) {
+                    letterGrade = 'B';
+                } else if (numberGrade >= 68) {
+                    letterGrade = 'C';
+                } else if (numberGrade >= 60) {
+                    letterGrade = 'D';
+                } else {
+                    letterGrade = 'F';
+                }
+                alert(`Number grade = ${numberGrade}\nLetter grade = ${letterGrade}`);
+            }
+        }
+        window.onload = convertNumberToLetterGrade;
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
+
+</html>

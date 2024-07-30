@@ -1,0 +1,23 @@
+/* aside{
+    float:right;
+    width: 94%
+} */
+
+img {
+  float: left;
+}
+
+li {
+  color: black;
+}
+
+a {
+  color: orange;
+}
+.firstletter {
+  font-size: 200%;
+}
+
+* {
+  font-family: sans-serif;
+}

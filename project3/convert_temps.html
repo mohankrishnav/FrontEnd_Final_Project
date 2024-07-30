@@ -1,0 +1,33 @@
+<!-- Name: Mohan Krishna Veeranki
+S Number: S00450299 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fahrenheit to Celsius Converter</title>
+
+    <script>
+        function convertFahrenheitToCelsius() {
+            // Prompt the user to enter a Fahrenheit temperature
+            let fahrenheit = prompt("Enter Fahrenheit temperature:");
+            // Convert the Fahrenheit temperature to Celsius
+            let celsius = (fahrenheit - 32) * 5 / 9;
+            // Display the result in an alert box
+            alert(`Fahrenheit temperature is ${fahrenheit}\nCelsius temperature is ${celsius.toFixed(2)}`);
+        }
+        // Run the conversion function when the page loads
+        window.onload = convertFahrenheitToCelsius;
+    </script>
+    <!-- <script>
+        var Fahrenheit = prompt("Enter Fahrenheit: ");
+        var celsius = ((Fahrenheit-32) * 5/9);
+        prompt("The celsius Temperature is: ", celsius)
+
+        // Run the conversion function when the page loads
+        
+    </script> -->
+</head>
+
+<body>
+</body>
